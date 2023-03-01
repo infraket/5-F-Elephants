@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>CONQUEST</title>
+		<link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">	
+				<nav>
+					<a href="index.html" class="logo">
+						<img src="img/logo.png"  width="104" height="26" alt="Логотип CONQUEST">
+					</a>
+					<ul class="main-nav">	
+						<li>
+							<a href="#">Каталог</a>	
+						</li>
+						<li>
+							<a href="#">Акции</a>	
+						</li>
+						<li>
+							<a href="#">Доставка</a>	
+						</li>
+						<li>
+							<a href="#">Контакты</a>	
+						</li>
+					</ul>
+					<ul class="user-nav">
+						<li>
+							<a href="#">
+								<img src="img/loupe.png" width="16" height="16" alt="Поиск">
+							</a>	
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/heart.png" width="21" height="18" alt="Избранное">
+							</a>	
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/cart.png" width="18" height="16" alt="Корзина">
+							</a>	
+						</li>
+					</ul>	
+				</nav>
+			</div>	
+		</header>
+		<main>
+            <h1 class="visually-hidden">интернет-магазин CONQUEST</h1>
+			<div class="container">
+				<h1 class="visually-hidden">Каталог товаров</h1>
+        		<ul class="breadcrumbs">
+            		<li>
+                		<a href="index.html">Главная</a>
+            		</li>
+            		<li>
+                		<a href="catalog.html">Каталог</a>
+            		</li>
+            		<li class="breadcrumbs-current">Мужские часы</li>
+        		</ul>
+        		 <div class="catalog-header-wrapper">
+            		<h1 class="page-title">Мужские часы</h1>
+            		<p>Сортировать по:&ensp;<a href="#"> популярности <img src="img/arrow-down.png" width="12" height="7" alt="стрелка выбора"></a></p>
+          		</div>
+        		<div class="catalog-columns">
+        			<section class="filters">
+        				<h2 class="visually-hidden">Фильтр товаров</h2>
+        				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        					<fieldset class="filter-range">
+        						<legend class="filter-header">Стоимость</legend>
+        						<input type="checkbox" class="toggle" id="toggle">
+								<label for="toggle" class="filter-label"></label>
+        						<div class="toggled">
+    								<input class="range-style" type="range" min="0" max="100000" step="1000" value="50000"> 
+								</div>	
+        					</fieldset>	
+                    		<fieldset class="filter-brand">
+                        		<legend class="filter-header">Бренд</legend>
+                        		<input type="checkbox" class="toggle2" id="toggle2">
+								<label for="toggle2" class="filter-label2"></label>
+								<div class="toggled2">
+                        			<ul>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brand-techne" id="filter-techne" checked>
+                                		<label for="filter-techne">Techne</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brand-rado" id="filter-rado" checked>
+                                		<label for="filter-rado">Rado</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brand-bvlgari" id="filter-bvlgari" checked>
+                                		<label for="filter-bvlgari">Bvlgari</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brand-tissot" id="filter-tissot">
+                                		<label for="filter-tissot">Tissot</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brand-omega" id="filter-omega">
+                                		<label for="filter-omega" >Omega</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brand-montblanc" id="filter-montblanc">
+                                		<label for="filter-montblanc">Montblanc</label>
+                            		</li>
+                        			</ul>
+                        		</div>	
+                    		</fieldset>
+                    		<fieldset class="filter-mechanism">
+                        		<legend class="filter-header">Механизм</legend>
+                        		<input type="checkbox" class="toggle3" id="toggle3">
+								<label for="toggle3" class="filter-label3"></label>
+								<div class="toggled3">
+                        			<ul>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mechanism-mechanical" id="filter-mechanical" checked>
+                                		<label for="filter-mechanical">Механические</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mechanism-quartz" id="filter-quartz">
+                                		<label for="filter-quartz">Кварцевые</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mechanism-electronic" id="filter-electronic">
+                                		<label for="filter-electronic">Электронные</label>
+                            		</li>
+                        			</ul>
+                        		</div>	
+                        	</fieldset>		
+                        	<fieldset class="filter-material">
+                        		<legend class="filter-header">Материал</legend>
+                        		<input type="checkbox" class="toggle4" id="toggle4">
+								<label for="toggle4" class="filter-label4"></label>
+								<div class="toggled4">
+                        			<ul>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="material-gold" id="filter-gold" checked>
+                                		<label for="filter-gold">Золото</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="material-platinum" id="filter-platinum">
+                                		<label for="filter-platinum">Платина</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="material-silver" id="filter-silver">
+                                		<label for="filter-silver">Серебро</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="material-steel" id="filter-steel">
+                                		<label for="filter-steel">Сталь</label>
+                            		</li>
+                        			</ul>
+                        		</div>	
+                        	</fieldset>	
+                        	<fieldset class="filter-color">
+                        		<legend class="filter-header">Цвет</legend>
+                        		<input type="checkbox" class="toggle5" id="toggle5">
+								<label for="toggle5" class="filter-label5"></label>
+								<div class="toggled5">
+                        			<ul>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-metalic" id="filter-metalic" checked>
+                                		<label for="filter-metalic">Металлик</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-black" id="filter-black">
+                                		<label for="filter-black">Черный</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-white" id="filter-white">
+                                		<label for="filter-white">Белый</label>
+                            		</li>
+                            		<li class="filter-option">
+                                		<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-red" id="filter-red">
+                                		<label for="filter-red">Красный</label>
+                            		</li>
+                        			</ul>
+                        		</div>	
+                        	</fieldset>	
+                    		<button type="reset" class="filter-button btn">Сбросить фильтр</button>
+                    	</form>	
+        			</section> 	
+        			<section class="catalog">
+        				<h2 class="visually-hidden">Каталог часов</h2>
+        				<ul class="catalog-list">
+                    		<li class="catalog-item">
+                        		<a href="catalog-item.html" class="catalog-item-link">
+                            		<h3>Techne</h3>
+                            		<p>12 700 <img src="img/ruble.svg" class="rub" width="8" height="12" alt="рубль"></p>
+                            		<img src="img/catalog-1.png" width="272" height="260" alt="Techne"> 
+                 				</a>
+                 				<ul class="catalog-item-nav">
+									<li>
+										<button type="button">
+											<img src="img/heart.png" width="21" height="18" alt="Избранное">
+										</button>	
+									</li>
+									<li>
+										<button type="button"> 
+											<img src="img/cart.png" width="18" height="16" alt="Корзина">	
+										</button> 
+									</li>
+                 				</ul>
+                 			</li>	
+                 			<li class="catalog-item">
+                        		<a href="catalog-item.html" class="catalog-item-link">
+                            		<h3>Techne</h3>
+                            		<p>12 700 <img src="img/ruble.svg" class="rub" width="8" height="12" alt="рубль"></p>
+                            		<img src="img/catalog-2.png" width="272" height="320" alt="Techne">
+                            	</a>	
+                            	<ul class="catalog-item-nav">
+									<li>
+										<button type="button">
+											<img src="img/heart.png" width="21" height="18" alt="Избранное">
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											<img src="img/cart.png" width="18" height="16" alt="Корзина">	
+										</button>
+									</li>
+                 				</ul>
+                 			</li>
+                 			<li class="catalog-item">
+                        		<a href="catalog-item.html" class="catalog-item-link">
+                            		<h3>Techne</h3>
+                            		<p>15 700 <img src="img/ruble.svg" class="rub" width="8" height="12" alt="рубль"></p>
+                            		<img src="img/catalog-3.png" width="272" height="320" alt="Techne">
+                            	</a>	
+                            	<ul class="catalog-item-nav">
+									<li>
+										<button type="button">
+											<img src="img/heart.png" width="21" height="18" alt="Избранное">
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											<img src="img/cart.png" width="18" height="16" alt="Корзина">	
+										</button>
+									</li>
+                 				</ul>		
+                 			</li>
+                 			<li class="catalog-item">
+                        		<a href="catalog-item.html" class="catalog-item-link">
+                            		<h3>Techne</h3>
+                            		<p>15 700 <img src="img/ruble.svg" class="rub" width="8" height="12" alt="рубль"></p>
+                            		<img src="img/catalog-4.png" width="272" height="320" alt="Techne">
+                 				</a>
+                 				<ul class="catalog-item-nav">
+									<li>
+										<button type="button">
+											<img src="img/heart.png" width="21" height="18" alt="Избранное">
+										</button>	
+									</li>
+									<li>
+										<button type="button">
+											<img src="img/cart.png" width="18" height="16" alt="Корзина">
+										</button>	
+									</li>
+                 				</ul>	
+                 			</li>
+                 			<li class="catalog-item">
+                        		<a href="catalog-item.html" class="catalog-item-link">
+                            		<h3>Techne</h3>
+                            		<p>12 700 <img src="img/ruble.svg" class="rub" width="8" height="12" alt="рубль"></p>
+                            		<img src="img/catalog-5.png" width="272" height="320" alt="Techne">
+                 				</a>
+                 				<ul class="catalog-item-nav">
+									<li>
+										<button type="button">
+											<img src="img/heart.png" width="21" height="18" alt="Избранное">
+										</button>	
+									</li>
+									<li>
+										<button type="button">
+											<img src="img/cart.png" width="18" height="16" alt="Корзина">
+										</button>		
+									</li>
+                 				</ul>	
+                 			</li>
+                 			<li class="catalog-item">
+                        		<a href="catalog-item.html" class="catalog-item-link">
+                            		<h3>Bvlgari</h3>
+                            		<p>35 700 <img src="img/ruble.svg" class="rub" width="8" height="12" alt="рубль">
+                            		</p>
+                            		<img src="img/catalog-7.png" width="272" height="320" alt="Bvlgari">
+                 				</a>
+                 				<ul class="catalog-item-nav">
+									<li>
+										<button type="button">
+											<img src="img/heart.png" width="21" height="18" alt="Избранное">
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											<img src="img/cart.png" width="18" height="16" alt="Корзина">
+										</button>		
+									</li>
+                 				</ul>	
+                 			</li>
+                 			<li class="catalog-item">
+                        		<a href="catalog-item.html" class="catalog-item-link">
+                            		<h3>Bvlgari</h3>
+                            		<p>72 700 <img src="img/ruble.svg" class="rub" width="8" height="12" alt="рубль"></p>
+                            		<img src="img/catalog-7.png" width="272" height="320" alt="Bvlgari">
+                 				</a>
+                 				<ul class="catalog-item-nav">
+									<li>
+										<button type="button">
+											<img src="img/heart.png" width="21" height="18" alt="Избранное">
+										</button>	
+									</li>
+									<li>
+										<button type="button">
+											<img src="img/cart.png" width="18" height="16" alt="Корзина">
+										</button>		
+									</li>
+                 				</ul>
+                 			</li>
+                 			<li class="catalog-item">
+                        		<a href="catalog-item.html" class="catalog-item-link">
+                            		<h3>Techne</h3>
+                            		<p>22 700 <img src="img/ruble.svg" class="rub" width="8" height="12" alt="рубль"></p>
+                            		<img src="img/catalog-8.png" width="272" height="320" alt="Techne">
+                 				</a>
+                 				<ul class="catalog-item-nav">
+									<li>
+										<button type="button">
+											<img src="img/heart.png" width="21" height="18" alt="Избранное">
+										</button>	
+									</li>
+									<li>
+										<button type="button">
+											<img src="img/cart.png" width="18" height="16" alt="Корзина">
+										</button>		
+									</li>
+                 				</ul>
+                 			</li>
+                 			<li class="catalog-item">
+                        		<a href="catalog-item.html" class="catalog-item-link">
+                            		<h3>Rado</h3>
+                            		<p>22 000 <img src="img/ruble.svg" class="rub" width="8" height="12" alt="рубль"></p>
+                            		<img src="img/catalog-9.png" width="272" height="320" alt="Rado">
+                 				</a>
+                 				<ul class="catalog-item-nav">
+									<li>
+										<button type="button">
+											<img src="img/heart.png" width="21" height="18" alt="Избранное">
+										</button>	
+									</li>
+									<li>
+										<button type="button">
+											<img src="img/cart.png" width="18" height="16" alt="Корзина">
+										</button>		
+									</li>
+                 				</ul>
+                 			</li>
+                 		</ul>	
+						<ul class="pagination">
+                			<li class="pagination-item">
+                 				<a class="pagination-link" href="#">&lt;</a>
+                			</li>
+                			<li class="pagination-item">
+                  				<a class="pagination-link" href="#">1</a>
+                			</li>
+                			<li class="pagination-item">
+                  				<a class="pagination-link" href="#">2</a>
+                			</li>
+                			<li class="pagination-item">
+                  				<a class="pagination-link pagination-link-current">3</a>
+				            </li>
+				            <li class="pagination-item">
+				                <a class="pagination-link" href="#">…</a>
+				            </li>
+				            <li class="pagination-item">
+				            	<a class="pagination-link" href="#">12</a>
+				            </li>
+				            <li class="pagination-item">
+				            	<a class="pagination-link" href="#">&gt;</a>
+				            </li>
+                		</ul>		   	
+        			</section>	
+        		</div>
+        		<section class="accessories">
+        			<header class="accessories-header">
+        				<h2>Ремешки</h2>
+						<a href="catalog.html">Смотреть все</a>	
+					</header>
+					<div class="accessories-catalog">
+						<button class="accessories-left" type="button">
+							<img src="img/arrow_left_catalog.svg" width="12" height="23" alt="влево">
+						</button>
+						<ul class="catalog-list">
+							<li class="catalog-item">
+                        		<a href="catalog-item.html" class="catalog-item-link">
+                            		<h3>GEORG JENSEN</h3>
+                            		<p>6 500 <img src="img/ruble.svg" class="rub" width="8" height="12" alt="рубль"></p>
+                            		<img src="img/band-1.png" width="380" height="394" alt="GEORG JENSEN" class="catalog-item-img">
+                 				</a>
+                 				<ul class="catalog-item-nav">
+									<li>
+										<button type="button">	
+											<img src="img/heart.png" width="21" height="18" alt="Избранное">
+										</button>	
+									</li>
+									<li>
+										<button type="button">
+											<img src="img/cart.png" width="18" height="16" alt="Корзина">
+										</button>		
+									</li>
+                 				</ul>
+                 			</li>
+                 			<li class="catalog-item">
+                        		<a href="catalog-item.html" class="catalog-item-link">
+                            		<h3>Nato</h3>
+                            		<p>3 200 <img src="img/ruble.svg" class="rub" width="8" height="12" alt="рубль"></p>
+                            		<img src="img/band-2.png" width="380" height="394" alt="NATO">
+                 				</a>
+                 				<ul class="catalog-item-nav">
+									<li>
+										<button type="button">
+											<img src="img/heart.png" width="21" height="18" alt="Избранное">
+										</button>	
+									</li>
+									<li>
+										<button type="button">
+											<img src="img/cart.png" width="18" height="16" alt="Корзина">
+										</button>		
+									</li>
+                 				</ul>	
+                 			</li>
+                 			<li class="catalog-item">
+                        		<a href="catalog-item.html" class="catalog-item-link">
+                            		<h3>Spark</h3>
+                            		<p>5 400 <img src="img/ruble.svg" class="rub" width="8" height="12" alt="рубль"></p>
+                            		<img src="img/band-3.png" width="380" height="394" alt="SPARK">
+                 				</a>
+                 				<ul class="catalog-item-nav">
+									<li>
+										<button type="button">
+											<img src="img/heart.png" width="21" height="18" alt="Избранное">
+										</button>	
+									</li>
+									<li>
+										<button type="button">
+											<img src="img/cart.png" width="18" height="16" alt="Корзина">
+										</button>		
+									</li>
+                 				</ul>
+                 			</li>
+						</ul>
+						<button class="accessories-right" type="button">
+							<img src="img/arrow_right_catalog.svg" width="12" height="23" alt="вправо">
+						</button>	
+					</div>	
+        		</section>	
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="footer-container">
+					<div class="footer-contacts">
+						<img src="img/logo-2.png" width="130" height="35" alt="Логотип">
+						<p>8 (499) 450-47-97</p>
+						<p>info@conquest.watch.ru</p>
+					</div>
+					<div class="footer-about-company">
+						<h3>о компании</h3>
+						<ul>
+							<li>
+								<a href="#">Наши магазины</a>
+							</li>
+							<li>
+								<a href="#">Вакансии</a>
+							</li>
+							<li>
+								<a href="#">Сертификаты</a>
+							</li>
+							<li>
+								<a href="#">Отзывы</a>
+							</li>
+						</ul>
+					</div>	
+					<div class="footer-for-sellers">
+						<h3>покупателям</h3>
+						<ul>
+							<li>
+								<a href="#">Каталог товаров</a>
+							</li>
+							<li>
+								<a href="#">Как заказать?</a>
+							</li>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">Корпоративным клиентам</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-delivery">
+						<h3>оплата и доставка</h3>
+						<ul>
+							<li>
+								<a href="#">Способы оплаты</a>
+							</li>
+							<li>
+								<a href="#">Время доставки</a>
+							</li>
+							<li>
+								<a href="#">Гарантии и ремонт</a>
+							</li>
+							<li>
+								<a href="#">Возврат и компенсация</a>
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>			
+		</footer>	
+	</body>
+</html>
